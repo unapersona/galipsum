@@ -6,8 +6,6 @@ $lightGrey: #d2d6dd;
 
 :root{
     --grid-gutter: 0px;
-    --color-accent: blue;
-    --color-primary: blue;
 }
 
 
@@ -52,6 +50,7 @@ $lightGrey: #d2d6dd;
 }
 
 .options{
+    --grid-gutter: 1rem;
     .row{
         margin-top: 3rem;
     }
@@ -65,5 +64,8 @@ $lightGrey: #d2d6dd;
         padding: 2rem;
         min-height: 40vh;
         border: none;
+    }
+    button.copy{
+        margin-top: 1rem;
     }
 }

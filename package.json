@@ -1,16 +1,17 @@
 {
   "name": "galipsum",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Xerador de textos de recheo en galego",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "styles": "node-sass --output-style compressed --source-map true --output src/assets src/assets",
+    "scripts": "esbuild src/assets/script.js --bundle --outfile=src/assets/script.min.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cash-dom": "^8.0.0",
     "chota": "^0.8.0",
-    "clipboard": "^2.0.6"
+    "clipboard": "^2.0.6",
+    "node-sass": "^4.14.1"
   }
 }

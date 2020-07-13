@@ -18,16 +18,27 @@
             <?php endforeach; ?>
             </ul>
             <form class="options">
-                <div class="row is-vertical-align">
-                    <label class="col-4" for="letras">Número</label>
-                    <input class="col-4" id="letras" name="letras" type="number" value="100" step="10" />
+                <div class="row is-center is-vertical-align">
+                    <input class="col-3" id="length" name="length" type="number" value="100" step="10" min="10" max="2000" />
+                    <div class="col-6">
+                        <label>
+                            <input type="radio" name="measure" value="words" checked />
+                            Palabras
+                        </label><br>
+                        <label>
+                            <input type="radio" name="measure" />
+                            Caracteres
+                        </label>
+                    </div>
                 </div>
+                <!--
                 <div class="row">
                     <label class="col is-vertical-align">
-                        <input type="checkbox" name="parrafos">
+                        <input type="checkbox" name="paragraphs">
                         <span>Incluír etiqueta &lt;p&gt;</span>
                     </label>
                 </div>
+                -->
             </form>
         </div>
         <div class="col-8 content">
