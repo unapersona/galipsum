@@ -12,14 +12,14 @@ $(function($){
     function getChars(text, length){
         var result = '';
         do{
-            result += text;
+            result += ' ' + text;
         }while(result.length < length);
         return result.substr(0, length);
     }
     function getWords(text, length){
         var result = '';
         do{
-            result += text;
+            result += ' ' + text;
         }while(result.split(' ').length < length);
         return result.split(' ').slice(0, length).join(' ');
     }
@@ -32,6 +32,9 @@ $(function($){
         var origin = $('input[name=origin]:checked').val();
         var measure = $('input[name=measure]:checked').val();
         if(typeof galipsum.texts[origin] === 'undefined') return;
+
+        $('.info .title').text(galipsum.texts[origin].title);
+        $('.info .author').text(galipsum.texts[origin].author);
 
         var content = galipsum.texts[origin].content;
         var result = measure === 'words'
