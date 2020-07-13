@@ -1,0 +1,69 @@
+
+@import "../../node_modules/chota/dist/chota";
+
+
+$lightGrey: #d2d6dd;
+
+:root{
+    --grid-gutter: 0px;
+    --color-accent: blue;
+    --color-primary: blue;
+}
+
+
+.wrapper{
+    margin: auto;
+    max-width: 96rem;
+    min-height: 100vh;
+    h1{
+        margin: 0 0 3rem;
+    }
+    .texts{
+        min-height: 80vh;
+        .sidebar{
+            border-right: solid 1px $lightGrey;
+        }
+    }
+}
+
+.menu{
+    left: 1px;
+    position: relative;
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    li{
+        padding: 10px;
+        background: $lightGrey;
+        border-right: solid 1px $lightGrey;
+        &.active{
+            background: lighten($lightGrey, 12%);
+            border: none;
+        }
+        label{
+            cursor: pointer;
+            input{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.options{
+    .row{
+        margin-top: 3rem;
+    }
+}
+
+.content{
+    padding: 3rem;
+    background: lighten($lightGrey, 12%);
+    border-radius: 0 5px 5px 0;
+    textarea{
+        padding: 2rem;
+        min-height: 40vh;
+        border: none;
+    }
+}
