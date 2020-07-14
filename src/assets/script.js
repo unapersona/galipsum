@@ -58,6 +58,6 @@ $(function($){
         $(document.body).trigger('galipsum.fill');
     });
 
-    $items.eq(2).find('input').trigger('click');
+    $items.eq(0).find('input').trigger('click');
 
 });

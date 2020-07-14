@@ -19,9 +19,6 @@ $lightGrey: #d2d6dd;
     }
     .texts{
         min-height: 80vh;
-        .sidebar{
-            border-right: solid 1px $lightGrey;
-        }
     }
 }
 
@@ -36,8 +33,10 @@ $lightGrey: #d2d6dd;
     li{
         padding: 10px;
         background: $lightGrey;
-        border-right: solid 1px $lightGrey;
+        box-shadow: 0 0 7px rgba(0,0,0,0.25);
         &.active{
+            z-index: 3;
+            position: relative;
             background: lighten($lightGrey, 12%);
             border: none;
         }
@@ -58,9 +57,11 @@ $lightGrey: #d2d6dd;
 }
 
 .content{
+    z-index: 2;
     padding: 3rem;
     background: lighten($lightGrey, 12%);
-    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 7px rgba(0,0,0,0.25);
+    border-radius: 5px;
     textarea{
         padding: 2rem;
         min-height: 40vh;

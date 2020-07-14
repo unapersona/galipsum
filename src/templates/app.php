@@ -19,7 +19,8 @@
             </ul>
             <form class="options">
                 <div class="row is-center is-vertical-align">
-                    <input class="col-3" id="length" name="length" type="number" value="100" step="10" min="10" max="2000" />
+                    <label class="is-hidden" for="length">Lonxitude</label>
+                    <input class="col-3" id="length" name="length" type="number" value="150" step="10" min="10" max="2000" />
                     <div class="col-6">
                         <label>
                             <input type="radio" name="measure" value="words" checked />
@@ -42,6 +43,7 @@
             </form>
         </div>
         <div class="col-8 content">
+            <label class="is-hidden" for="text">Resultado</label>
             <textarea id="text"></textarea>
             <div class="row">
                 <div class="col info">
