@@ -6,6 +6,7 @@ $lightGrey: #d2d6dd;
 
 :root{
     --grid-gutter: 0px;
+    --color-primary: #0070AF;
 }
 
 
@@ -16,6 +17,11 @@ $lightGrey: #d2d6dd;
     h1{
         margin: 0;
         padding: 3rem;
+        text-align: center;
+        img{
+            width: 50%;
+            max-width: 48rem;
+        }
     }
     .texts{
         min-height: 80vh;

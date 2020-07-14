@@ -3,7 +3,9 @@
 
 <div class="wrapper">
     <header>
-        <h1 class="text-center">GALipsum</h1>
+        <h1>
+            <img src="/src/assets/galipsum.svg" alt="GALipsum logo" />
+        </h1>
     </header>
     <section class="row texts">
         <div class="col-4 sidebar">
