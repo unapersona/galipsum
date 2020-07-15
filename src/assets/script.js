@@ -32,6 +32,7 @@ $(function($){
         var origin = $('input[name=origin]:checked').val();
         var measure = $('input[name=measure]:checked').val();
         if(typeof galipsum.texts[origin] === 'undefined') return;
+        location.hash = origin;
 
         $('.info .title').text(galipsum.texts[origin].title);
         $('.info .author').text(galipsum.texts[origin].author);
@@ -58,6 +59,9 @@ $(function($){
         $(document.body).trigger('galipsum.fill');
     });
 
-    $items.eq(0).find('input').trigger('click');
+    var $default;
+    if(location.hash) $default = $(location.hash);
+    if(!$default) $default = $items.find('input').eq(0);
+    $default.trigger('click');
 
 });

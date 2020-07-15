@@ -13,7 +13,7 @@
             <?php foreach( $this->texts as $key => $item): ?>
                 <li>
                     <label class="field is-vertical-align">
-                        <input type="radio" name="origin" value="<?php echo $key; ?>">
+                        <input type="radio" name="origin" id="<?php echo $key; ?>" value="<?php echo $key; ?>">
                         <span class="label"><?php echo $item['title']; ?></span>
                     </label>
                 </li>
