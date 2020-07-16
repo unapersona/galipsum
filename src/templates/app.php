@@ -66,6 +66,16 @@
             </div>
         </div>
     </section>
+    <section class="disclaimer">
+        <p class="small text-center">
+            GALipsum é unha ferramenta de xeración de textos de recheo para utilizar en traballos de deseño e  maquetación.
+        </p>
+        <p class="small text-center">
+            É tamén un <a href="https://github.com/unapersona/galipsum" target="_blank" rel="nofollow noopener">proxecto de software libre</a>
+            no que podes axudar achegando o que mellor se che de,
+            ou que podes descargar para utilizar cos textos que a ti che de a gana.
+        </p>
+    </section>
 </div>
 
 <script type="text/javascript">
