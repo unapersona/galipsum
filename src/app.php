@@ -22,6 +22,10 @@ $klein->respond('/src/assets/[script.min.js|style.css|style.css.map|galipsum.svg
     $response->file('./src/assets/' . $request->filename, $request->filename, $mime);
 });
 
+$klein->respond('/favicon.ico', function ($request, $response, $service) {
+    $response->file('./favicon.ico', 'favicon.ico', 'image/vnd.microsoft.icon');
+});
+
 $klein->respond('GET', '/', function (\Klein\Request $request, \Klein\Response $response, \Klein\ServiceProvider $service, \Klein\App $app){
 	$service->title = 'GALipsum | Xerador de textos de recheo en galego';
 	$service->render(__DIR__ . '/templates/app.php');
