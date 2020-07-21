@@ -1,0 +1,3 @@
+[*.{php,js,css,scss}]
+indent_style = space
+indent_size = 4

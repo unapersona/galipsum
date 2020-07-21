@@ -1,0 +1,6 @@
+node_modules/
+vendor/
+yarn.lock
+src/assets/script.min.js
+src/assets/style.css
+src/assets/style.css.map
