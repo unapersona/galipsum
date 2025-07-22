@@ -12,6 +12,6 @@
     "cash-dom": "^8.1.0",
     "chota": "^0.8.0",
     "clipboard": "^2.0.8",
-    "node-sass": "^7.0.0"
+    "node-sass": "^9.0.0"
   }
 }
